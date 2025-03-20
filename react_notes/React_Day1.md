@@ -67,13 +67,80 @@ less flexible
 #### What is vite ?
 - Vite is a modern build tool and development server designed to make front-end development faster and more efficient.
 - It is widely used in React, Vue and other framework.
-**Commands**
+- Simple configuration
+- Typescript support
+- Supports CSS pre-processors, CSS modules
+  
+#### Commands to Run React Application
 ```
-npm create vite@latest my-react-app
+npm create vite my-react-app
 cd my-react-app
 npm install
 npm run dev
 ``` 
+- It will run the react application on port 5173 which seems equivalent to VITE.
 
+```
+import './App.css'
 
- 
+function App() {
+  return (
+    <>
+      <h1>Welcome to first react project</h1>
+      <h2>Hello World!!!</h2>
+      <h3>Hello React 19</h3>
+    </>
+  )
+}
+
+export default App
+
+```
+
+#### Flow of Execution :
+1) First it will load index.html file
+2) In index.html file we have main.jsx
+3) In main.jsx file we have App.jsx
+- So it will execute App.jsx file      
+
+**Note:**
+1) All html tags is in lowercase so whatever component we are creating should start the first letter as upper case then only it will recognize as a component.
+```
+function App() {
+  return (
+    <>
+      <h1>Welcome to first react project</h1>
+    </>
+  )
+}
+
+export default App
+
+```
+```
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+```
+
+2) When we write the component and when we try to return it should takes the wrapper such as <div> </div> or <> </> otherwise it will gives the error
+```
+function App() {
+  return (
+    <>
+      <h1>Welcome to first react project</h1>
+      <h2>Hello World!!!</h2>
+      <h3>Hello React 19</h3>
+    </>
+  )
+}
+
+export default App
+
+```
+3) In __src__ package we can create new .jsx file or we can create new component.
+
