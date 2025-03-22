@@ -23,3 +23,6 @@ export function Setting() {
         </div>
     )
 }
+
+export const userKey = "123@$hdg%";
+

@@ -1,6 +1,5 @@
 import './App.css'
-import Login from "./UserComponent.jsx";
-import {Profile,Setting} from "./UserComponent.jsx";
+import Login,{Profile, Setting,userKey} from "./UserComponent.jsx";
 
 function App() {
     return (
@@ -11,6 +10,7 @@ function App() {
             <Login/>
             <Profile/>
             <Setting/>
+            <h3>{userKey}</h3>
         </>
     )
 }
