@@ -80,7 +80,7 @@ npm run dev
 ``` 
 - It will run the react application on port 5173 which seems equivalent to VITE.
 
-```
+```javascript
 import './App.css'
 
 function App() {
@@ -105,7 +105,7 @@ export default App
 
 **Note:**
 1) All html tags is in lowercase so whatever component we are creating should start the first letter as upper case then only it will recognize as a component.
-```
+```javascript
 function App() {
   return (
     <>
@@ -117,7 +117,7 @@ function App() {
 export default App
 
 ```
-```
+```javascript
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -128,7 +128,7 @@ createRoot(document.getElementById('root')).render(
 ```
 
 2) When we write the component and when we try to return it should takes the wrapper such as <div> </div> or <> </> otherwise it will gives the error
-```
+```javascript
 function App() {
   return (
     <>
