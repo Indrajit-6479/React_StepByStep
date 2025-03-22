@@ -26,3 +26,17 @@ export function Setting() {
 
 export const userKey = "123@$hdg%";
 
+export function FunctionForJSX(){
+    const userName = "Indrajit";
+    let x = 10;
+    let y = 20;
+    return(
+        <div>
+            <h3>{userName}</h3>
+            <h3>{10+20+30}</h3>
+            <h3>{x*y}</h3>
+            <button onClick={()=>alert("Hello JSX")}>Click me</button>
+        </div>
+    )
+
+}
