@@ -1,4 +1,6 @@
 import './App.css'
+import Login from "./UserComponent.jsx";
+import {Profile,Setting} from "./UserComponent.jsx";
 
 function App() {
     return (
@@ -6,6 +8,9 @@ function App() {
             <Welcome/>
             <h2>Hello World!!!</h2>
             <h3>Hello React {sum()}</h3>
+            <Login/>
+            <Profile/>
+            <Setting/>
         </>
     )
 }
