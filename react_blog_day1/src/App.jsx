@@ -1,4 +1,3 @@
-import './App.css'
 import Login, {FunctionForJSX, Profile, Setting, userKey} from "./UserComponent.jsx";
 
 function App() {
